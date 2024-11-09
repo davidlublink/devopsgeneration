@@ -3,15 +3,15 @@ job "first-nomad-job-templated" {
     task "service" {
       driver = "docker"
       config {
-        image = "davidlublink/devopsgeneration:useless-work-basic"
-             force_pull=true
+        image      = "davidlublink/devopsgeneration:useless-work-basic"
+        force_pull = true
       }
 
       template {
-           data = <<EOH
+        data        = <<EOH
 THIS IS A TEMPLATE BRO!
 EOH
-           destination="local/myfile.txt"
+        destination = "local/myfile.txt"
       }
     }
   }

@@ -6,9 +6,9 @@ job "first-nomad-job-resources" {
         image = "davidlublink/devopsgeneration:useless-work-basic"
       }
 
-    resources {
-         memory=10
-    }
+      resources {
+        memory = 10
+      }
     }
   }
 }
