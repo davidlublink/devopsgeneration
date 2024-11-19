@@ -3,7 +3,7 @@ job "first-nomad-job-basic" {
     task "service" {
       driver = "docker"
       config {
-        image = "davidlublink/devopsgeneration:useless-work-basic"
+        image = "davidlublink/devopsgeneration:pretend-work"
       }
     }
   }
